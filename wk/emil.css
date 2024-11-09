@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --bgcolor--: #ffffff;
+    --hrfontcl--: #a8a6a1; 
+    --hrbutton--: #1a5544;
+    --scfont--: #ababab;
+    --firiccol--: #ffcfcb;
+    --scicocol--:#ffefb1;
+    --thicocol--: #c2e1ff;
+    
+    
+}
+/*header*/
+.header{
+    width: 100%;
+    display: flex;
+    padding: 35px 30px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.icon a i{
+    font-size: 30px;
+    color: black;
+}
+.navbar h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 700;
+}
+/*line*/
+.line{
+    background-color: rgba(212, 210, 210, 0.288);
+    height: 10px;
+}
+.lin1{
+    background-color: var(--hrbutton--);
+    height: 10px;
+    width: 100%;
+}
+/*email*/
+.email{
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+}
+.emailcheck p{
+    max-width: 40rem;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.email-con{
+    margin-top: 3rem;
+}
+.emailh1 h1{
+    font-size: 25px;
+    color: #a8a6a1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.emailh1 p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.emailem input{
+    height: 3rem;
+    width: 40rem;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.58);
+    margin-top: 20px;
+}
+.emailcheck {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+.emailcheck input{
+    height: 20px;
+    width: 20px;
+    color: #c2e1ff;
+    accent-color: rgb(246, 38, 72);
+    outline: none;
+    
+}
+.emailbtn{
+    float: right;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.emailbtn a button{
+   height: 3rem;
+   width: 6rem;
+   border-radius: 10px;
+   border: none;
+   font-weight: 600;
+   color: #b7b6b6;
+   background-color: #c2e1ff;
+}

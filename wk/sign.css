@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;list-style: none;
+    list-style: none;
+    
+   
+
+}
+:root{
+    --bgcolor--: #ffffff;
+    --hrfontcl--: #a8a6a1; 
+    --hrbutton--: #1a5544;
+    --scfont--: #ababab;
+    --firiccol--: #ffcfcb;
+    --scicocol--:#ffefb1;
+    --thicocol--: #c2e1ff;
+    
+    
+}
+/*NAVBAR SECTION*/
+
+
+
+header{
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    background-color: transparent;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 0px 8px;
+    background-color: #ffffff;
+    
+   
+}
+/*header:active{
+    width: 100%;
+    padding: 20px 0;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    transition: background-color 0.4s ease-in-out;
+
+}*/
+
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.navbar .icon i{
+    font-size: 20px;
+    color: #ffffff;
+    
+    visibility: hidden;
+    
+    
+}
+.nav-content{
+    display: flex;
+    gap: 1rem;
+}
+.nav-content ul{
+    display: flex;
+    gap: 2rem;
+}
+.nav-logo img{
+    height: 35px;
+    width: 10rem;
+}
+.nav-content ul li a{
+    color: var(--hrbutton--);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60px;
+    text-decoration:  3px underline transparent;
+    transition: 1.5s;
+    transition: 1s ease;
+    z-index: 100;
+    border-bottom: 2px solid transparent;
+    
+
+}
+.nav-content.scrolled ul li a{
+    color: #000000;
+}
+.nav-content ul li a:hover, .nav-content ul li .active{
+    border-bottom: 2px solid var(--hrbutton--);
+}
+
+
+.list ul{
+  display: none;
+  
+}
+.list ul li a{
+    color: var(--hrbutton--);
+    font-size: 15px;
+    transition: 0.5s;
+}
+.list ul li a:hover{
+ color: orange;
+}
+.list ul li{
+    margin: 20px 10px 20px 0;
+}
+.list{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--hrbutton--);
+   
+
+}
+.list:hover ul {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px 20px;
+    height: 10rem;
+    background-color: #f3f2f2;
+    width: 10rem;
+    border-radius: 5px;
+   
+    
+    
+}
+.hoverList li a{
+    color: #1a5544;
+}
+.nav-content a button{
+    background-color: transparent;
+    height: 2rem;
+    width: 4rem;
+    font-size: 18px;
+    border: 1px solid var(--hrbutton--);
+    border-radius: 10px;
+    color: var(--hrbutton--);
+}
+/*inputform*/
+.input-group{
+   min-height: 120vh; 
+   background-color: #fcf9f1;
+   align-items: center;
+   justify-content: center;
+   display:flex;
+   padding-top: 5rem;
+    
+    
+}
+
+.input-content{
+    align-items: center;
+    display: block;
+    height: auto;
+}
+.input-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-con h1{
+   font-size: 45px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   color: #000000;
+}
+.input-element{
+    display: flex;
+    background-color: #ffffff;
+    height: 25rem;
+    margin-top: 40px;
+    justify-content: center;
+    width: 37rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    
+
+}
+.input-element input{
+    height: 3rem;
+    width: 30rem;
+    border: 1px solid var(--hrfontcl--);
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-left: 20px;
+   
+}
+.input-element input:focus{
+    outline: 2px solid rgb(19, 19, 225);
+}
+.inp1 label{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inp2 label{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inpuel{
+    margin-top: 40px;
+}
+.inpuel .inp2{
+    margin-top: 45px;
+}
+.inp3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.inp3 button{
+    height: 3rem;
+    width: 7rem;
+    background-color: rgba(127, 255, 212, 0.269);
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #acd5fe;
+}
+.forget{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.forget a{
+    color: blue;
+    font-size: 20px;
+    text-decoration: 2px solid underline transparent;
+    transition: 0.5s;
+}
+.forget a:hover{
+    text-decoration: 2px solid underline blue;
+}
+/*footer*/
+.footer{
+    background-color: var(--hrbutton--);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+}
+.fooicon{
+    display: flex;
+    gap: 2rem;
+}
+
+.foii1 ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.foii i:hover{
+   color: #ababab;
+}
+.foii1 ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: 2px solid underline;
+}
+    
+
+.foii1 ul li{
+    border-left: 2px solid white;
+    padding-left: 10px;
+    
+}
+.fooi1 h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
